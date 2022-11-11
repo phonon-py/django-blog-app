@@ -46,8 +46,12 @@
             
             {% endif %}
             {% endfor %}
+            
+            
+            {% if posts %}
+            {% include 'blog/snippets/pagination.html' %}                    
+            {% endif %}
                 
-            {% include 'blog/snippets/pagination.html' %}    
         </div>
     </div>
     
